@@ -1,1 +1,17 @@
-<app-main></app-main>
+<nz-layout class="layout">
+  <nz-sider>
+    <div class="logo"><h1>EzTlz</h1></div>
+    <ul nz-menu nzMode="inline">
+      <li nz-menu-item>
+        <span><a routerLink="/hashulator">Hashulator</a></span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout class="right-layout">
+    <nz-header>
+    </nz-header>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
