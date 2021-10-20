@@ -1,1 +1,26 @@
-<p>hashulator works!</p>
+<div class="root">
+  <h1>Hashulator</h1>
+  <nz-input-group nzSearch nzSize="large"  class="link" >
+    <input type="text" nz-input placeholder="Type your input..."  [(ngModel)]="inputState"/>
+  </nz-input-group>
+
+  <br/>
+
+    <button class="butt" nz-button nzType="primary" nzSize="large" nzSearch (click)="hashingFunc()" >Hashulate</button>
+
+  <br/>
+
+  <nz-radio-group [(ngModel)]="hashVal">
+    <label nz-radio nzValue="SHA512">SHA512</label>
+    <label nz-radio nzValue="SHA384">SHA384</label>
+    <label nz-radio nzValue="SHA256">SHA256</label>
+    <label nz-radio nzValue="SHA224">SHA224</label>
+    <label nz-radio nzValue="SHA3">SHA3</label>
+    <label nz-radio nzValue="SHA1">SHA1</label>
+  </nz-radio-group>
+
+  <br/>
+
+  <h4 class="result">{{result}}</h4>
+
+</div>

@@ -9,7 +9,11 @@ import {NzMenuModule} from "ng-zorro-antd/menu";
 import { EntranceComponent } from './entrance/entrance.component';
 import { AdminRoutingModule } from './admin/admin-routing.module';
 import {AdminModule} from "./admin/admin.module";
-import { HashulatorComponent } from './hashulator/hashulator.component'; // CLI imports
+import { HashulatorComponent } from './hashulator/hashulator.component';
+import {NzInputModule} from "ng-zorro-antd/input";
+import {FormsModule} from "@angular/forms";
+import {NzSelectModule} from "ng-zorro-antd/select";
+import {NzRadioModule} from "ng-zorro-antd/radio"; // CLI imports
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { HashulatorComponent } from './hashulator/hashulator.component'; // CLI 
     NzBreadCrumbModule,
     NzMenuModule,
     AdminRoutingModule,
-    AdminModule
+    AdminModule,
+    NzInputModule,
+    FormsModule,
+    NzSelectModule,
+    NzRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -58,3 +58,9 @@ nz-footer {
   text-align: center;
 }
 
+
+
+.ant-menu-item-selected {
+  color: white !important;
+  background-color: rgba(133, 160, 171, 0.37) !important;
+}
