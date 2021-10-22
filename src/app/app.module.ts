@@ -13,13 +13,15 @@ import { HashulatorComponent } from './hashulator/hashulator.component';
 import {NzInputModule} from "ng-zorro-antd/input";
 import {FormsModule} from "@angular/forms";
 import {NzSelectModule} from "ng-zorro-antd/select";
-import {NzRadioModule} from "ng-zorro-antd/radio"; // CLI imports
+import {NzRadioModule} from "ng-zorro-antd/radio";
+import { EasterComponent } from './easter/easter.component'; // CLI imports
 
 @NgModule({
   declarations: [
     AppComponent,
     EntranceComponent,
     HashulatorComponent,
+    EasterComponent,
   ],
   imports: [
     NzButtonModule,
