@@ -5,7 +5,7 @@ import * as CryptoJS from "crypto-js";
 @Component({
   selector: 'app-hashulator',
   templateUrl: './hashulator.component.html',
-  styleUrls: ['./hashulator.component.css']
+  styleUrls: ['./hashulator.component.scss']
 })
 export class HashulatorComponent implements OnInit {
 

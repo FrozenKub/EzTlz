@@ -14,7 +14,10 @@ import {NzInputModule} from "ng-zorro-antd/input";
 import {FormsModule} from "@angular/forms";
 import {NzSelectModule} from "ng-zorro-antd/select";
 import {NzRadioModule} from "ng-zorro-antd/radio";
-import { EasterComponent } from './easter/easter.component'; // CLI imports
+import { EasterComponent } from './easter/easter.component';
+import { FourOfourComponent } from './four-ofour/four-ofour.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import {HttpClientModule} from "@angular/common/http"; // CLI imports
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import { EasterComponent } from './easter/easter.component'; // CLI imports
     EntranceComponent,
     HashulatorComponent,
     EasterComponent,
+    FourOfourComponent,
+    YoutubeComponent,
   ],
   imports: [
     NzButtonModule,
@@ -34,7 +39,8 @@ import { EasterComponent } from './easter/easter.component'; // CLI imports
     NzInputModule,
     FormsModule,
     NzSelectModule,
-    NzRadioModule
+    NzRadioModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

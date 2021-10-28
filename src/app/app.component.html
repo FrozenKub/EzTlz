@@ -1,16 +1,16 @@
 <nz-layout class="layout">
-  <nz-sider>
-    <a routerLink="/"><div class="logo"><h1>EzTlz</h1></div></a>
+  <nz-sider  class="{{dTheme ? 'sider' : 'd_sider'}}">
+    <a routerLink="/"><div class="{{dTheme ? 'logo' : 'd_logo'}}"><h1>EzTlz</h1></div></a>
     <ul nz-menu nzMode="inline">
       <li nz-menu-item>
         <span><a routerLink="/hashulator">Hashulator</a></span>
       </li>
     </ul>
   </nz-sider>
-  <nz-layout class="right-layout">
-    <nz-header>
+  <nz-layout  class="{{dTheme ? 'right-layout ' : 'd_right-layout '}}">
+    <nz-header class="{{dTheme ? 'head' : 'd_head'}}" (click)="onThemeChange()">
     </nz-header>
-    <nz-content>
+    <nz-content class="{{dTheme ? 'content' : 'd_content'}}">
       <router-outlet></router-outlet>
     </nz-content>
   </nz-layout>
