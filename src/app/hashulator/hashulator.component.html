@@ -10,17 +10,22 @@
 
   <br/>
 
-  <nz-radio-group [(ngModel)]="hashVal">
-    <label nz-radio nzValue="SHA512" class="lab">SHA512</label>
-    <label nz-radio nzValue="SHA384">SHA384</label>
-    <label nz-radio nzValue="SHA256">SHA256</label>
-    <label nz-radio nzValue="SHA224">SHA224</label>
-    <label nz-radio nzValue="SHA3">SHA3</label>
-    <label nz-radio nzValue="SHA1">SHA1</label>
-  </nz-radio-group>
+  <div class="d_box">
+    <nz-radio-group [(ngModel)]="hashVal">
+      <label nz-radio nzValue="SHA512" class="lab">SHA512</label>
+      <label nz-radio nzValue="SHA384">SHA384</label>
+      <label nz-radio nzValue="SHA256">SHA256</label>
+      <label nz-radio nzValue="SHA224">SHA224</label>
+      <label nz-radio nzValue="SHA3">SHA3</label>
+      <label nz-radio nzValue="SHA1">SHA1</label>
+    </nz-radio-group>
+  </div>
 
   <br/>
+  <br/>
 
-  <h4 class="result">{{result}}</h4>
+  <div class="answer">
+    <h4 class="result">{{result}}</h4>
+  </div>
 
 </div>

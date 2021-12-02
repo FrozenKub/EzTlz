@@ -1,0 +1,18 @@
+<div class="root">
+  <h1>Textmage</h1>
+  <nz-input-group nzSearch nzSize="large"  class="link" >
+    <input type="text" nz-input placeholder="Type your input..."  [(ngModel)]="input"/>
+    <input type="text" nz-input placeholder="Type your font..."  [(ngModel)]="fontInput"/>
+  </nz-input-group>
+
+  <br/>
+
+  <button class="butt" nz-button nzType="primary" nzSize="large" nzSearch (click)="convertTextToPng()" >Textmage it</button>
+
+  <br/>
+
+  <div class="answer">
+    <a href="{{data}}" target="_blank"><h4 class="result">{{data}}</h4></a>
+  </div>
+
+</div>

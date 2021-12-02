@@ -1,9 +1,12 @@
 <nz-layout class="layout">
   <nz-sider  class="{{dTheme ? 'sider' : 'd_sider'}}">
     <a routerLink="/"><div class="{{dTheme ? 'logo' : 'd_logo'}}"><h1>EzTlz</h1></div></a>
-    <ul nz-menu nzMode="inline">
+    <ul class="{{dTheme ? 'l_ul' : 'd_ul'}}" nz-menu nzMode="inline">
       <li nz-menu-item>
         <span><a routerLink="/hashulator">Hashulator</a></span>
+      </li>
+      <li nz-menu-item>
+        <span><a routerLink="/textmage">Textmage</a></span>
       </li>
     </ul>
   </nz-sider>

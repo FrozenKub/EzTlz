@@ -87,8 +87,11 @@ button:active
   border-radius: 0.2em;
   padding: 1em;
   background: #85a0ab;
-  h4
-  {
-    color: white;
-  }
+    a
+    {
+      h4
+      {
+        color: white;
+      }
+    }
 }

@@ -11,7 +11,7 @@ export class HashulatorComponent implements OnInit {
 
   hashVal: string | undefined
   inputState: string | undefined
-  result: string | undefined
+  result: string | undefined = 'Place for your result :)'
 
   constructor() { }
 

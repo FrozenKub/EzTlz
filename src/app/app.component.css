@@ -13,17 +13,31 @@
 
 .d_logo {
   margin: 16px;
-  background: #252d3f;
+  background: rgb(133 160 171);
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-
 .d_logo > h1
 {
   margin: 0;
   color: #f7f7f9;
+}
+
+
+.l_ul > li > span > a
+{
+}
+
+.d_ul > li > span > a
+{
+  color: rgb(133 160 171) !important;
+}
+
+.ant-menu-inline
+{
+  border-right: 1px  solid rgb(133 160 171);
 }
 
 .layout {
@@ -49,7 +63,7 @@
   background: rgb(0 0 0);
   -webkit-box-shadow: 6px 0px 9px -1px rgba(49, 49, 49, 0.22);
   -moz-box-shadow: 6px 0px 9px -1px rgba(49, 49, 49, 0.22);
-  box-shadow: 6px 0px 9px -1px rgba(37, 45, 63, 0.2);
+  box-shadow: 6px 0px 9px -1px rgba(133 160 171 0.2);
 }
 
 .ant-menu
@@ -74,7 +88,7 @@
 }
 
 .d_head {
-  background: #252d3f;
+  background: rgb(133 160 171);
   padding: 0;
 }
 .content {
@@ -99,8 +113,6 @@
 nz-footer {
   text-align: center;
 }
-
-
 
 .ant-menu-item-selected {
   color: white !important;

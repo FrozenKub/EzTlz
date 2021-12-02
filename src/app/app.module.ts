@@ -15,7 +15,8 @@ import {FormsModule} from "@angular/forms";
 import {NzSelectModule} from "ng-zorro-antd/select";
 import {NzRadioModule} from "ng-zorro-antd/radio";
 import { FourOfourComponent } from './four-ofour/four-ofour.component';
-import {HttpClientModule} from "@angular/common/http"; // CLI imports
+import {HttpClientModule} from "@angular/common/http";
+import { TxtToPngComponent } from './txt-to-png/txt-to-png.component'; // CLI imports
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {HttpClientModule} from "@angular/common/http"; // CLI imports
     EntranceComponent,
     HashulatorComponent,
     FourOfourComponent,
+    TxtToPngComponent,
   ],
   imports: [
     NzButtonModule,
